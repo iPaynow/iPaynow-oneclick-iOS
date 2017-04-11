@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC3F37161E9C821E00665400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3F37151E9C821E00665400 /* main.m */; };
+		AC3F37191E9C821E00665400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3F37181E9C821E00665400 /* AppDelegate.m */; };
+		AC3F37211E9C821E00665400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F37201E9C821E00665400 /* Assets.xcassets */; };
+		AC3F37241E9C821E00665400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F37221E9C821E00665400 /* LaunchScreen.storyboard */; };
+		AC3F372D1E9C82DA00665400 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC3F372C1E9C82DA00665400 /* ViewController.mm */; };
+		AC3F372F1E9C82E400665400 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F372E1E9C82E400665400 /* ViewController.storyboard */; };
+		AC3F37311E9C832000665400 /* libIPNOneClickPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3F37301E9C832000665400 /* libIPNOneClickPayPlugin.a */; };
+		AC3F37371E9C833200665400 /* ipaynow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC3F37361E9C833200665400 /* ipaynow.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC3F37111E9C821E00665400 /* iPaynowOneClickPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPaynowOneClickPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3F37151E9C821E00665400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC3F37171E9C821E00665400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC3F37181E9C821E00665400 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC3F37201E9C821E00665400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC3F37231E9C821E00665400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC3F37251E9C821E00665400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC3F372B1E9C82DA00665400 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC3F372C1E9C82DA00665400 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		AC3F372E1E9C82E400665400 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		AC3F37301E9C832000665400 /* libIPNOneClickPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIPNOneClickPayPlugin.a; sourceTree = "<group>"; };
+		AC3F37321E9C832B00665400 /* IPNOneClickDESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickDESUtil.h; sourceTree = "<group>"; };
+		AC3F37331E9C832B00665400 /* IPNOneClickPayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickPayDelegate.h; sourceTree = "<group>"; };
+		AC3F37341E9C832B00665400 /* IPNOneClickPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickPayPlugin.h; sourceTree = "<group>"; };
+		AC3F37351E9C832B00665400 /* IPNOneClickPreSignMessageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickPreSignMessageUtil.h; sourceTree = "<group>"; };
+		AC3F37361E9C833200665400 /* ipaynow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ipaynow.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC3F370E1E9C821E00665400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3F37311E9C832000665400 /* libIPNOneClickPayPlugin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC3F37081E9C821E00665400 = {
+			isa = PBXGroup;
+			children = (
+				AC3F37131E9C821E00665400 /* iPaynowOneClickPayDemo */,
+				AC3F37121E9C821E00665400 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC3F37121E9C821E00665400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F37111E9C821E00665400 /* iPaynowOneClickPayDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC3F37131E9C821E00665400 /* iPaynowOneClickPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F37381E9C833A00665400 /* OneClickPay */,
+				AC3F37171E9C821E00665400 /* AppDelegate.h */,
+				AC3F37181E9C821E00665400 /* AppDelegate.m */,
+				AC3F372B1E9C82DA00665400 /* ViewController.h */,
+				AC3F372C1E9C82DA00665400 /* ViewController.mm */,
+				AC3F372E1E9C82E400665400 /* ViewController.storyboard */,
+				AC3F37201E9C821E00665400 /* Assets.xcassets */,
+				AC3F37221E9C821E00665400 /* LaunchScreen.storyboard */,
+				AC3F37251E9C821E00665400 /* Info.plist */,
+				AC3F37141E9C821E00665400 /* Supporting Files */,
+			);
+			path = iPaynowOneClickPayDemo;
+			sourceTree = "<group>";
+		};
+		AC3F37141E9C821E00665400 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F37151E9C821E00665400 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC3F37381E9C833A00665400 /* OneClickPay */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F37361E9C833200665400 /* ipaynow.bundle */,
+				AC3F37321E9C832B00665400 /* IPNOneClickDESUtil.h */,
+				AC3F37331E9C832B00665400 /* IPNOneClickPayDelegate.h */,
+				AC3F37341E9C832B00665400 /* IPNOneClickPayPlugin.h */,
+				AC3F37351E9C832B00665400 /* IPNOneClickPreSignMessageUtil.h */,
+				AC3F37301E9C832000665400 /* libIPNOneClickPayPlugin.a */,
+			);
+			name = OneClickPay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC3F37101E9C821E00665400 /* iPaynowOneClickPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3F37281E9C821E00665400 /* Build configuration list for PBXNativeTarget "iPaynowOneClickPayDemo" */;
+			buildPhases = (
+				AC3F370D1E9C821E00665400 /* Sources */,
+				AC3F370E1E9C821E00665400 /* Frameworks */,
+				AC3F370F1E9C821E00665400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPaynowOneClickPayDemo;
+			productName = iPaynowOneClickPayDemo;
+			productReference = AC3F37111E9C821E00665400 /* iPaynowOneClickPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC3F37091E9C821E00665400 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ipaynow;
+				TargetAttributes = {
+					AC3F37101E9C821E00665400 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = G46Z83B74L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC3F370C1E9C821E00665400 /* Build configuration list for PBXProject "iPaynowOneClickPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC3F37081E9C821E00665400;
+			productRefGroup = AC3F37121E9C821E00665400 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC3F37101E9C821E00665400 /* iPaynowOneClickPayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC3F370F1E9C821E00665400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3F37241E9C821E00665400 /* LaunchScreen.storyboard in Resources */,
+				AC3F37371E9C833200665400 /* ipaynow.bundle in Resources */,
+				AC3F37211E9C821E00665400 /* Assets.xcassets in Resources */,
+				AC3F372F1E9C82E400665400 /* ViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC3F370D1E9C821E00665400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3F37191E9C821E00665400 /* AppDelegate.m in Sources */,
+				AC3F37161E9C821E00665400 /* main.m in Sources */,
+				AC3F372D1E9C82DA00665400 /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC3F37221E9C821E00665400 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3F37231E9C821E00665400 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC3F37261E9C821E00665400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC3F37271E9C821E00665400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC3F37291E9C821E00665400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G46Z83B74L;
+				INFOPLIST_FILE = iPaynowOneClickPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPaynowOneClickPayDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaynow.iPaynowOneClickPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC3F372A1E9C821E00665400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G46Z83B74L;
+				INFOPLIST_FILE = iPaynowOneClickPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPaynowOneClickPayDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipaynow.iPaynowOneClickPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC3F370C1E9C821E00665400 /* Build configuration list for PBXProject "iPaynowOneClickPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3F37261E9C821E00665400 /* Debug */,
+				AC3F37271E9C821E00665400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3F37281E9C821E00665400 /* Build configuration list for PBXNativeTarget "iPaynowOneClickPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3F37291E9C821E00665400 /* Debug */,
+				AC3F372A1E9C821E00665400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC3F37091E9C821E00665400 /* Project object */;
+}
