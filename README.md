@@ -1,6 +1,7 @@
 # iPaynow-OneClickPay-iOS:一键支付
 ## 一、版本要求
 iOS SDK要求iOS6.0及以上
+
 注意：1.1.0版本开始支持bitcode，之前版本不支持
 
 ## 二、接入流程
