@@ -1,12 +1,13 @@
 # iPaynow-OneClickPay-iOS:一键支付
 ## 一、版本要求
 iOS SDK要求iOS6.0及以上
+注意：1.1.0版本开始支持bitcode，之前版本不支持
 
 ## 二、接入流程
 ### 1.自动接入(Cocoapods方式)
 #### 1).添加`podfile`文件
 ```
-pod 'ipaynowOneClickPay','~> 1.0.9' 
+pod 'ipaynowOneClickPay','~> 1.1.0' 
 ```
 #### 2).运行`pod install`
 #### 3).使用`.xcodespace`打开工程
@@ -27,11 +28,21 @@ pod 'ipaynowOneClickPay','~> 1.0.9'
 ### 1.使用`IPNOneClickPreSignMessageUtil`生成待签名订单
 
 ```objc
-NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];[dateFormatter setDateFormat:@"yyyyMMddHHmmss"];IPNPreSignMessageUtil *preSign=[[IPNPreSignMessageUtil alloc]init];preSign.appId=kAppId;preSign.mhtOrderNo=[dateFormatter stringFromDate:[NSDate date]]; preSign.mhtName=@"我是商户"; 
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+[dateFormatter setDateFormat:@"yyyyMMddHHmmss"];
+IPNPreSignMessageUtil *preSign=[[IPNPreSignMessageUtil alloc]init];
+preSign.appId=kAppId;
+preSign.mhtOrderNo=[dateFormatter stringFromDate:[NSDate date]]; preSign.mhtName=@"我是商户"; 
 preSign.mhtOrderName=_txtOrderName.text; 
-preSign.mhtOrderType=@"01";preSign.mhtCurrencyType=@"156"; 
+preSign.mhtOrderType=@"01";
+preSign.mhtCurrencyType=@"156"; 
 preSign.mhtOrderAmt=_txtOrdrAmt.text; 
-preSign.mhtOrderDetail=_txtOrderDetail.text; preSign.mhtOrderStartTime=[dateFormatter stringFromDate:[NSDatedate]];preSign.notifyUrl=@"http://192.168.1.154:8080/api/mchnotify";preSign.mhtReserved=_txtMhtReserved.text;preSign.userId=_txtUserId.text;NSString *originStr=[preSign generatePresignMessage];
+preSign.mhtOrderDetail=_txtOrderDetail.text; preSign.mhtOrderStartTime=[dateFormatter stringFromDate:[NSDate
+date]];
+preSign.notifyUrl=@"http://192.168.1.154:8080/api/mchnotify";
+preSign.mhtReserved=_txtMhtReserved.text;
+preSign.userId=_txtUserId.text;
+NSString *originStr=[preSign generatePresignMessage];
 ```
 此处需要在服务端对`originStr`进行签名。
 
@@ -56,7 +67,8 @@ typedef NS_ENUM(NSInteger, IPNOneClickPayResult) {
 	IPNOneClickPayResultSuccess , //成功 
 	IPNOneClickPayResultFail , //失败 
 	IPNOneClickPayResultCancel , //取消 
-	IPNOneClickPayResultUnknown //未知};
+	IPNOneClickPayResultUnknown //未知
+};
 ```
 
 ## 其他设置
