@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC0393E51E9DC42F0074153C /* libIPNOneClickPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0393E41E9DC42F0074153C /* libIPNOneClickPayPlugin.a */; };
 		AC3F37161E9C821E00665400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3F37151E9C821E00665400 /* main.m */; };
 		AC3F37191E9C821E00665400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3F37181E9C821E00665400 /* AppDelegate.m */; };
 		AC3F37211E9C821E00665400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F37201E9C821E00665400 /* Assets.xcassets */; };
@@ -15,10 +14,10 @@
 		AC3F372D1E9C82DA00665400 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC3F372C1E9C82DA00665400 /* ViewController.mm */; };
 		AC3F372F1E9C82E400665400 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F372E1E9C82E400665400 /* ViewController.storyboard */; };
 		AC3F37371E9C833200665400 /* ipaynow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC3F37361E9C833200665400 /* ipaynow.bundle */; };
+		ACECC3BF1F44383D00F891CD /* libIPNOneClickPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACECC3BE1F44383D00F891CD /* libIPNOneClickPayPlugin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC0393E41E9DC42F0074153C /* libIPNOneClickPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIPNOneClickPayPlugin.a; sourceTree = "<group>"; };
 		AC3F37111E9C821E00665400 /* iPaynowOneClickPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPaynowOneClickPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F37151E9C821E00665400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC3F37171E9C821E00665400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		AC3F37341E9C832B00665400 /* IPNOneClickPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickPayPlugin.h; sourceTree = "<group>"; };
 		AC3F37351E9C832B00665400 /* IPNOneClickPreSignMessageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPNOneClickPreSignMessageUtil.h; sourceTree = "<group>"; };
 		AC3F37361E9C833200665400 /* ipaynow.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ipaynow.bundle; sourceTree = "<group>"; };
+		ACECC3BE1F44383D00F891CD /* libIPNOneClickPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIPNOneClickPayPlugin.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC0393E51E9DC42F0074153C /* libIPNOneClickPayPlugin.a in Frameworks */,
+				ACECC3BF1F44383D00F891CD /* libIPNOneClickPayPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 				AC3F37331E9C832B00665400 /* IPNOneClickPayDelegate.h */,
 				AC3F37341E9C832B00665400 /* IPNOneClickPayPlugin.h */,
 				AC3F37351E9C832B00665400 /* IPNOneClickPreSignMessageUtil.h */,
-				AC0393E41E9DC42F0074153C /* libIPNOneClickPayPlugin.a */,
+				ACECC3BE1F44383D00F891CD /* libIPNOneClickPayPlugin.a */,
 			);
 			name = OneClickPay;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G46Z83B74L;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iPaynowOneClickPayDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -301,6 +301,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaynow.iPaynowOneClickPayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G46Z83B74L;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iPaynowOneClickPayDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -320,6 +321,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ipaynow.iPaynowOneClickPayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
